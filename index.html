@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY VALENTINES DAY</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 id="valentinesday">Click Me</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <span id="multiheart">
+                    <img id="one" src="./assets/images/heart2.png" onclick="changeOne()" height="194px" width="259px">
+                    <img id="two" src="./assets/images/heart2.png" onclick="changeTwo()" height="194px" width="259px">
+                    <img id="three" src="./assets/images/heart2.png" onclick="changeThree()" height="194px" width="259px">
+                </span>
+            </div>
+            <div class="col-md-6 static-height">
+                <!-- remove.bg-->
+                <img id="heart" src="./assets/images/heart.png" alt="heart">
+            </div>
+            <div class="col-md-3">
+                <span id="multiheart2">
+                    <img id="four" src="./assets/images/heart2.png" onclick="changeFour()" height="194px" width="259px">
+                    <img id="five" src="./assets/images/heart2.png" onclick="changeFive()" height="194px" width="259px">
+                    <img id="six" src="./assets/images/heart2.png" onclick="changeSix()" height="194px" width="259px">
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <h1 id="valentinesday2">I LOVE YOU CARA!!</h1>
+        </div>
+    </div>
+    
+    <script>
+        var clicked = 0;
+        document.getElementById("valentinesday2").style.visibility = "hidden";
+        document.getElementById("multiheart").style.visibility = "hidden";
+        document.getElementById("multiheart2").style.visibility = "hidden";
+        document.getElementById("heart").style.visibility = "hidden";
+
+        
+        document.onclick = function(event) {
+            document.getElementById("valentinesday").textContent = "HAPPY VALENTINE'S DAY!!";
+            document.getElementById("valentinesday").style.visibility = "visible";
+            document.getElementById("valentinesday2").style.visibility = "visible";
+            document.getElementById("multiheart").style.visibility = "visible";
+            document.getElementById("multiheart2").style.visibility = "visible";
+            document.getElementById("heart").style.visibility = "visible";
+
+            if (clicked === 0) {
+                // for (var x = 0; x < 3 ; x++ ){
+                //     var img = document.createElement("img");
+                //     var img2 = document.createElement("img");
+                //     img.src = "./heart2.png";
+                //     img2.src = "./heart2.png";
+                //     var src = document.getElementById("multiheart");
+                //     var src2 = document.getElementById("multiheart2");
+                //     src.appendChild(img);
+                //     src2.appendChild(img2);
+                // }
+
+                clicked = 1;
+
+                for (var x = 0; x < 1000 ; x++){ 
+                    $("#heart").animate({ height: "550px", width: "550px" });
+                    $("#heart").animate({ height: "500px", width: "500px" });
+                    $("#heart").animate({ height: "550px", width: "550px" });
+                    $("#heart").animate({ height: "500px", width: "500px" });
+                    $("#heart").delay(1000);
+                }
+            }
+        };
+
+        function changeOne() {
+                document.getElementById("one").src = "./assets/images/elephant2.png";
+        }
+        function changeTwo() {
+                document.getElementById("two").src = "./assets/images/ruffio.jpg";
+        }
+        function changeThree() {
+                document.getElementById("three").src = "./assets/images/lola.jpg";
+        }
+        function changeFour() {
+                document.getElementById("four").src = "./assets/images/nickel.jpg";
+        }
+        function changeFive() {
+                document.getElementById("five").src = "./assets/images/us.jpg";
+        }
+        function changeSix() {
+                document.getElementById("six").src = "./assets/images/ruffio2.jpg";
+        }
+
+    </script>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

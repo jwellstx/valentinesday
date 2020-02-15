@@ -1,0 +1,28 @@
+body { 
+    background-color: forestgreen;
+    font-family: 'Cedarville Cursive', cursive;
+}
+#valentinesday,
+#valentinesday2 {
+    /* text-align: center; */
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: red;
+    padding-top: 75px;
+    font-weight: bolder;
+}
+#valentinesday{
+    margin-bottom: 15px;
+}
+#heart {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 50px;
+}   
+#two,
+#five {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
